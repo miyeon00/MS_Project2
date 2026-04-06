@@ -6,9 +6,14 @@ import time
 import os
 from urllib.parse import unquote
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+# .env 로드
+load_dotenv()
 
 # 1. 설정
-RAW_SERVICE_KEY = "108cf309bbc8c99d0741c0be027d8b2fe855cdd230352ccc391e2815785bfe16"
+# 환경변수 가져오기
+RAW_SERVICE_KEY = os.getenv("RAW_SERVICE_KEY")
 BASE_URL = "http://apis.data.go.kr/1192000/VsslEtrynd5/Info5"
 SERVICE_KEY = unquote(RAW_SERVICE_KEY)
 

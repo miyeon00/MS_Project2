@@ -1,0 +1,17 @@
+# 데이터 파일 제외
+*.csv
+*.xlsx
+
+# 폴더 제외
+data/
+
+# Python 캐시
+__pycache__/
+*.pyc
+
+# 환경파일
+.env
+
+# OS 파일
+.DS_Store
+Thumbs.db
